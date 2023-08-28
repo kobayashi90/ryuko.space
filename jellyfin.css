@@ -1,0 +1,464 @@
+@import url("https://cdn.jsdelivr.net/gh/prayag17/Jellyfin-Icons/Font%20Awesome/light.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); body, h1, h2, h3, h4 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* LOGIN Section */
+#loginPage .readOnlyContent,
+#loginPage form {
+  max-width: 22em;
+}
+
+#loginPage h1 {
+  display: none;
+}
+
+#loginPage .padded-left.padded-right.padded-bottom-page {
+  margin-top: 50px;
+}
+
+#loginPage .raised.cancel.block.btnManual.emby-button {
+  display: none;
+}
+#loginPage .raised.cancel.block.btnForgotPassword.emby-button {
+  display: none;
+}
+
+.backgroundContainer,
+.dialog,
+html {
+  background-color: #181818;
+}
+
+/* Desktop Layout */
+
+.layout-desktop .detailLogo {
+  left: 5%;
+  background-position: top left;
+}
+
+.layout-desktop .itemBackdrop {
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 80vw;
+  position: relative;
+  right: -20%;
+}
+
+.layout-desktop .itemBackdrop:after {
+  background: None;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.layout-desktop .detailPageWrapperContainer {
+  margin-top: -65vh;
+}
+
+.layout-desktop .detailImageContainer .card,
+.layout-desktop .itemTags,
+.layout-desktop .itemExternalLinks {
+  display: none;
+}
+
+.layout-desktop .detailPagePrimaryContainer,
+.layout-desktop .detailPageContent {
+  padding-left: 5%;
+}
+
+.layout-desktop .detailPagePrimaryContent {
+  width: 45%;
+}
+
+.layout-desktop .detailPagePrimaryContainer {
+  display: inline-table;
+  z-index: 2;
+  left: 5%;
+}
+
+.layout-desktop .detailPageSecondaryContainer {
+  margin: 0 0 1.25em 0;
+}
+
+.layout-desktop .itemDetailsGroup {
+  margin-top:  0;
+}
+
+.layout-desktop a.overview-expand.emby-button {
+  margin: none;
+  padding: none;
+}
+
+.layout-desktop form.trackSelections,
+.layout-desktop .itemName.originalTitle {
+  display: none;
+}
+
+.layout-desktop .itemName,
+.layout-mobile .itemName {
+  font-weight: normal;
+}
+
+/*Library Page - Align Posters to Center */
+.padded-right-withalphapicker {padding-right:2.5% !important;}
+
+/* Episode Section */
+
+.listItemImage.listItemImage-large.itemAction.lazy {
+  transition: filter 0.2s
+}
+.listItemImageButton-icon {
+  padding: 0;
+}
+.secondary.listItem-overview.listItemBodyText {
+  height: 61px; 
+  margin: 0;
+}
+.listItemImageButton {
+  margin: auto; 
+  font-size: 1.6em !important;
+}
+@media all and (min-width: 100em){
+  .listItemImage.listItemImage-large.itemAction.lazy {
+    height: 110px;
+  }
+  .listItem-content {
+    height: 115px;
+  }
+  .secondary.listItem-overview.listItemBodyText {
+    height: 4em; 
+    margin: 0;
+  }
+}
+@media all and (max-width: 100em){
+  .listItemImage.listItemImage-large.itemAction.lazy {height: 80px;}
+  .listItem-content {height: 85px;}
+  .secondary.listItem-overview.listItemBodyText {height: 2.5em; margin: 0;}
+}
+
+.missingIndicator, .unairedIndicator {
+    background: #ae3030eb;
+    padding: .3em .6em;
+    color: #fff;
+}
+.layout-mobile .listItemImageButton {
+    background: rgba(0, 0, 0, 0);
+}
+
+/* Mobile Layout */
+
+.layout-mobile .headerHomeButton,
+.layout-mobile .headerCastButton,
+.layout-mobile .headerSyncButton {
+    display: none;
+}
+
+.layout-mobile .mainDrawerButton {
+  display: block!important;
+}
+
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
+  background: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {
+  background: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.headerTabs.sectionTabs {
+  text-size-adjust: 110%;
+  font-size: 110%;
+}
+.pageTitle {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.emby-tab-button {
+  padding: 1.75em 1.7em;
+}
+
+/* Mobile Series Layout */
+
+.layout-mobile .itemTags,
+.layout-mobile .itemExternalLinks,
+.layout-mobile .trackSelections,
+.layout-mobile .itemName.originalTitle,
+.layout-mobile .directorsGroup,
+.layout-mobile .writersGroup,
+#seriesAirTime {
+    display: none;
+}
+
+/* Mobile Poster */
+.layout-mobile .detailImageContainer .card,
+.layout-mobile .detailImageContainer .card.backdropCard,
+.layout-mobile .detailImageContainer .card.squareCard {
+    top: auto;
+    display: none;
+}
+
+.layout-mobile .detailLogo {
+    display: block;
+    width: 15em;
+    left: 5%;
+    top: 17vh;
+}
+
+.detailRibbon {
+    background: rgba(32, 32, 32, 0);
+}
+
+.detail-clamp-text {
+    -webkit-line-clamp: 4;
+}
+
+.layout-mobile .infoWrapper {
+    padding-left: 0;
+    margin-top: 6em;
+}
+
+.layout-mobile .itemMiscInfo,
+.layout-mobile .itemName,
+.layout-mobile .mainDetailButtons,
+.layout-mobile .parentName {
+    text-align: left;
+}
+
+.layout-mobile .itemMiscInfo, 
+.layout-mobile .itemName, 
+.layout-mobile .mainDetailButtons, 
+.layout-mobile .parentName {
+    justify-content: left;
+    text-align: left;
+}
+
+.layout-mobile .itemName.parentNameLast.withOriginalTitle {
+    margin: 0.6em 0;
+}
+
+.layout-mobile .mainDetailButtons {
+    padding-left: 0;
+}
+
+.layout-mobile .itemBackdrop {
+    height: 40vh;/*30*/
+    margin-top: 0;
+}
+
+.layout-mobile .itemBackdrop::before {
+    content: '';
+    right: 0;
+    left: 0;
+    /*top: 0;*/
+    bottom: 0;
+    height: 25vh;
+    position: absolute;
+    z-index: -1;
+    /*background: linear-gradient(0deg, #181818 15%, #18181800 65%);*/
+    background: linear-gradient(0deg, #181818 10%, #18181800 65%);
+}
+
+.layout-mobile .detailPageWrapperContainer {
+  top: -5em;
+}
+
+.layout-mobile .infoWrapper {
+    margin-top: 0;
+}
+
+.layout-mobile .itemName.parentNameLast.withOriginalTitle {
+    margin: 0 0 0.6em 0;
+}
+
+.layout-mobile .detailPageSecondaryContainer {
+    margin: 0 0 1em 0;
+}
+
+.layout-mobile .overview-expand {
+    padding: 0 1em 0.3em 1em;
+}
+
+.layout-mobile .mainDetailButtons {
+  margin-top: 1.5em;
+}
+
+.layout-mobile .btnPlay {
+  border-radius: 2em;
+  /*width: 7vw;*/
+  background-color: white;
+  /*padding: 0.4em!important;*/
+  /*margin-right: 30%!important;*/
+}
+
+.layout-mobile .btnPlay::after {
+  content : attr(title);
+  margin: 0 10px 0 2px;
+  color: black;
+}
+
+.layout-mobile .btnPlay.detailButton {
+  flex-direction: row;
+}
+
+.layout-mobile .btnShuffle,
+.layout-desktop .btnShuffle {
+  display: none;
+}
+
+.layout-mobile .material-icons.detailButton-icon.play_arrow {
+  color: black;
+}
+
+.layout-mobile .listViewUserDataButtons {
+  display: none;
+}
+
+.layout-mobile .listItem-content {
+  display: block;
+}
+
+.layout-mobile .listItem-content .listItemBody {
+  padding: 0.85em 0;
+}
+
+.layout-mobile .listItem-content .listItemImage-large {
+  height: 30vw;
+  width: 86vw;
+}
+
+.layout-mobile .listItem-content .listItemImage-large .listItemImageButton, .listItemIndicators {
+  font-size: 1em!important;
+}
+
+.layout-mobile .listItem-bottomoverview {
+  font-size: 100%;
+}
+
+.layout-mobile .detailPagePrimaryContent {
+  position: relative;
+  margin-top: 1em;
+}
+
+/*Item Page (Cast&Crew) - disable carousel, wrap and limit the amount of names (aligned) */
+/*Shrink and square (or round) cast thumnails*/
+@media all and (min-width: 131.25em){
+  #castContent .card.overflowPortraitCard {
+    width: 6.3vw !important; 
+    font-size: 90% !important;
+  }
+}
+@media all and (min-width: 120em) and (max-width: 131.25em){
+  #castContent .card.overflowPortraitCard {
+    width: 6.4vw !important; 
+    font-size: 90% !important;
+  }
+}
+@media all and (min-width: 100em) and (max-width: 120em){
+  #castContent .card.overflowPortraitCard {
+    width: 7.6vw !important; 
+    font-size: 90% !important;
+  }
+}
+@media all and (min-width: 87.5em) and (max-width: 100em){
+  #castContent .card.overflowPortraitCard {
+    width: 9.3vw !important; 
+    font-size: 90% !important;
+  }
+}
+@media all and (min-width: 75em) and (max-width: 87.5em){
+  #castContent .card.overflowPortraitCard {
+    width: 10.5vw !important; 
+    font-size: 90% !important;
+  }
+}
+@media all and (min-width: 50em) and (max-width: 75em){
+  #castContent .card.overflowPortraitCard {
+    width: 15vw !important;
+    font-size: 90% !important;
+  }
+}
+@media all and (min-width: 43.75em) and (max-width: 50em){
+  #castContent .card.overflowPortraitCard {
+    width: 20.1vw !important; 
+    font-size: 90% !important;
+  }
+}
+@media all and (min-width: 25em) and (max-width: 43.75em){
+  #castContent .card.overflowPortraitCard {
+    width: 31.2vw !important; 
+    font-size: 90% !important;
+  }
+}
+@media all and (max-width: 25em){
+  #castContent .card.overflowPortraitCard {
+    width: 40vw !important; 
+    font-size: 90% !important;
+  }
+}
+
+.cardPadder {
+  background-color: #0000 !important; box-shadow: none !important;
+}
+
+/*Correct image aspect ratio behaviour, set border-radius to zero for square tiles*/
+
+@media all and (min-width: 131.25em){
+  #castContent .cardScalable {
+    width: calc(6.3vw - 0.6em) !important; 
+    height: calc(6.3vw - 0.6em) !important;
+  }
+}
+@media all and (min-width: 120em) and (max-width: 131.25em){
+  #castContent .cardScalable {
+    width:  calc(6.4vw - 0.6em) !important; 
+    height: calc(6.4vw - 0.6em) !important;
+  }
+}
+@media all and (min-width: 100em) and (max-width: 120em){
+  #castContent .cardScalable {
+    width:  calc(7.6vw - 0.6em) !important; 
+    height: calc(7.6vw - 0.6em) !important;
+  }
+}
+@media all and (min-width: 87.5em) and (max-width: 100em){
+  #castContent .cardScalable {
+    width:  calc(9.3vw - 0.6em) !important; 
+    height: calc(9.3vw - 0.6em) !important;
+  }
+}
+@media all and (min-width: 75em) and (max-width: 87.5em){
+  #castContent .cardScalable {
+    width:  calc(10.5vw - 0.6em) !important; 
+    height: calc(10.5vw - 0.6em) !important;
+  }
+}
+@media all and (min-width: 50em) and (max-width: 75em){
+  #castContent .cardScalable {
+    width:  calc(15vw - 0.6em) !important; 
+    height: calc(15vw - 0.6em) !important;
+  }
+}
+@media all and (min-width: 43.75em) and (max-width: 50em){
+  #castContent .cardScalable {
+    width:  calc(20.1vw - 0.6em) !important; 
+    height: calc(20.1vw - 0.6em) !important;
+  }
+}
+@media all and (min-width: 25em) and (max-width: 43.75em){
+  #castContent .cardScalable {
+    width:  calc(31.2vw - 0.6em) !important; 
+    height: calc(31.2vw - 0.6em) !important;
+  }
+}
+@media all and (max-width: 25em){
+  #castContent .cardScalable {
+    width:  calc(40vw - 0.6em) !important;
+    height: calc(40vw - 0.6em) !important;
+  }
+}
